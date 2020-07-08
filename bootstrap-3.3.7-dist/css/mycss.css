@@ -1,0 +1,53 @@
+body{
+    background: url(/images/beijing.jpg);
+}
+.theme{
+    background: url(/images/beijing1.jpg);
+} 
+.navtheme{
+    background-color: rgb(29, 25, 25)!important;
+}
+table{
+        width: 100%;
+        height: 465px;
+        border-width:0px 1px;
+        border-style:solid;
+        border:red;
+        margin:50px auto 0;
+        border-collapse:collapse;
+        font-size: 20px;
+        color: black;
+    }
+.oder{
+        text-align: center;
+    }
+#like1,#like2,#like3{
+    margin-right: 10px;
+    cursor: pointer;   
+}
+#down1,#down2,#down3{
+    margin-right: 10px;
+    cursor: pointer;   
+}
+#like1:hover,#like2:hover,#like3:hover{
+    border-radius: 16px 16px;
+    box-shadow: 2px 2px 10px pink;
+}
+#down1:hover,#down2:hover,#down3:hover{
+    border-radius: 16px 16px;
+    box-shadow: 2px 2px 10px skyblue;
+}
+#song{
+    cursor: pointer;
+}
+#btn3:hover,#btn2:hover,#btn1:hover{
+    text-shadow: 0px 5px 5px black;
+    transform:translateY(2px);
+}
+@keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+    }
+#musicflag:hover{
+    box-shadow: 5px 5px 10px white;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>智金音悦台</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7-dist/css/index.css">
+    <script src="bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="styleSheet"  href="bootstrap-3.3.7-dist/css/mycss.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+
+  </head>
+  <body>
+      <!--导航条-->
+    <nav id="navtheme" class="navbar navbar-default" style="margin-bottom: 0px; background-color: pink;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">智金音乐</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li style="line-height: 50px;"><img style="animation: rotation 3s linear infinite;" id="musicflag" src="images/musicflag.png"></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="搜索音乐,视频,电台" style="width: 400px;"> 
+              </div>
+              <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li id="zhuti"><a href="#">主题&nbsp<img id="themebtn" src="/images/them.png" alt=""></a></li>
+              <li><a href="#">开通VIP</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登录<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">绑定社交账号</a></li>
+                  <li><a href="#">商城</a></li>
+                  <li><a href="#">个人信息设置</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">退出登录</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- 轮播图 -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- 图片内容 -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active carousel-img">
+            <img class="carousel-img" src="images/banner1.jpg" alt="..." style="width: 100%; height: 250px;">
+          </div>
+          <div class="item carousel-img">
+            <img src="images/banner2.jpg" alt="..." style="width: 100%; height: 250px;">
+          </div>
+          <div class="item">
+            <img src="images/banner3.jpg" alt="..." style="width: 100%; height: 250px;">
+          </div>
+         
+        </div>
+        <!--左右按钮-->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <table>
+          <thead>
+                <th></th>
+                <th>操作</th>
+                <th>音乐标题</th>
+                <th>歌手</th>
+                <th>专辑</th>
+                <th>时长</th>
+          </thead>
+          <tbody>
+                <tr>
+                    <td class="oder">01</td>
+                    <td><img id="like1" src="images/unlike.png"><img id="down1" src="images/down.png"></td>                  
+                    <td id="song"><audio id="music1"  src="/audio/周杰伦 - 一路向北 (《头文字D》电影插曲).mp3"></audio><p id="btn1">一路向北 (《头文字D》电影插曲)</p></td>
+                    <td>周杰伦</td>
+                    <td>十一月的肖邦</td>
+                    <td>04:55</td>
+                </tr>
+                <tr>
+                    <td class="oder">02</td>
+                    <td><img id="like2" src="images/unlike.png"><img id="down2" src="images/down.png"></td>
+                    <td id="song"><audio id="music2" src="/audio/なんでもないや (movie ver.) (动画电影《你的名字。》片尾曲； 映画「君の名は。」EDテーマ).mp3"></audio><p id="btn2">なんでもないや (movie ver.) (动画电影《你的名字。》片尾曲</p></td>
+                    <td>Foorin</td>
+                    <td>パプリカ</td>
+                    <td>03:28</td>
+                </tr>
+                <tr>
+                    <td class="oder">03</td>
+                    <td><img id="like3" src="images/unlike.png"><img id="down3" src="images/down.png"></td>
+                    <td id="song"><audio id="music3" src="/audio/Mojito - 周杰伦.mp3"></audio><p id="btn3">Mojito</p></td>
+                    <td>周杰伦</td>
+                    <td>Mojito</td>
+                    <td>03:05</td>
+                </tr>
+          </tbody>
+      </table>
+  </body>
+  <script>
+    //点击播放   
+    var music3 = $("#music3")[0];
+    //var musicflag = $("#musicflag")[0];
+    $("#btn3").click(function(){
+      if (music3.paused){ 
+        music3.play(); 
+      } 
+      else{ 
+        music3.pause(); 
+      } 
+      });
+      var music2 = $("#music2")[0];
+    $("#btn2").click(function(){
+      if (music2.paused){ 
+        music2.play(); 
+      } 
+      else{ 
+        music2.pause(); 
+      } 
+      });
+      var music1 = $("#music1")[0];
+    $("#btn1").click(function(){
+      if (music1.paused){ 
+        music1.play(); 
+      } 
+      else{ 
+        music1.pause(); 
+      } 
+      })
+    //下载点击事件
+    var downsuccess1 = false;
+    $(function(){
+      $("#down1").bind("click",function(){
+        if (!downsuccess1) {
+		      $("#down1").prop("src", "images/downright.png");
+          downsuccess1 = true;
+	      } else {
+		      alert("已下载成功!");
+	      }
+      });
+    });
+    var downsuccess2 = false;
+    $(function(){
+      $("#down2").bind("click",function(){
+        if (!downsuccess2) {
+		      $("#down2").prop("src", "images/downright.png");
+          downsuccess2 = true;
+	      } else {
+		      alert("已下载成功!");
+	      }
+      });
+    });
+    var downsuccess3 = false;
+    $(function(){
+      $("#down3").bind("click",function(){
+        if (!downsuccess3) {
+		      $("#down3").prop("src", "images/downright.png");
+          downsuccess3 = true;
+	      } else {
+		      alert("已下载成功!");
+	      }
+      });
+    });
+    //收藏点击事件
+    var flag = true;
+    $(function(){
+      $("#like1").bind("click",function(){
+        if (flag) {
+		      $("#like1").prop("src", "images/like.png");
+		      flag = false;
+	      } else {
+		      $("#like1").prop("src", "images/unlike.png");
+		      flag= true;
+	      }
+       });
+    });
+    $(function(){
+      $("#like2").bind("click",function(){
+        if (flag) {
+		      $("#like2").prop("src", "images/like.png");
+		      flag = false;
+	      } else {
+		      $("#like2").prop("src", "images/unlike.png");
+		      flag= true;
+	      }
+       });
+    });
+    $(function(){
+      $("#like3").bind("click",function(){
+        if (flag) {
+		      $("#like3").prop("src", "images/like.png");
+		      flag = false;
+	      } else {
+		      $("#like3").prop("src", "images/unlike.png");
+		      flag= true;
+	      }
+       });
+    });
+    //主题切换
+    $(function(){
+      $("#themebtn").bind("click",function() {
+        $("body").toggleClass("theme");
+        $("#navtheme").toggleClass("navtheme");
+      })
+    })
+  </script>
+</html>
